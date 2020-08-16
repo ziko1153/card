@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+
+}
+body {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 320px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    font-family: 'Mulish', sans-serif;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.card-image {
+    grid-area: image;
+    background: url('img/ziko.jpg');
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 20px;
+}
+
+.card-stats {
+    grid-area:  stats;
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    grid-auto-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    justify-content: center;
+    color: black;
+}
+
+.card-stats .stat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react {
+    color: #61DAFB;
+}
+.html5 {
+    color: #E44D26;
+}
+.laravel {
+    color: #F05340;
+}
+
+.node {
+    color: #75AC64;
+}
+
+.js {
+color:#F0D91D;
+}
+.bootstrap {
+    color: #8211F6;
+}
